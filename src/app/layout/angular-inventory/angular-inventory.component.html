@@ -1,0 +1,32 @@
+
+<!-- Header -->
+<header class="app-header">
+  <div class="logo" >Inventory Management System</div>
+  <nav class="nav-links">
+    <a routerLink="/products" routerLinkActive="active">Products</a>
+    <a routerLink="/categories" routerLinkActive="active">Categories</a>
+  </nav>
+</header>
+
+<div class="app-container">
+  <!-- Sidebar -->
+  <aside class="app-sidebar">
+    <ul>
+      <li><a routerLink="/products" routerLinkActive="active"> Products</a></li>
+      <li><a routerLink="/categories" routerLinkActive="active"> Categories</a></li>
+     
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="app-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+ 
+<!-- Footer -->
+
+<footer class="app-footer">
+  <p>&copy; {{ currentYear }} Inventory Management System</p>
+</footer>
+
